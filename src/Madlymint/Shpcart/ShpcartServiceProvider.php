@@ -18,7 +18,9 @@ class ShpcartServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('madlymint/shpcart');
+		$this->publishes([
+			__DIR__.'/../../config/config.php' => config_path('config.php'),
+		]);
 		include __DIR__.'/../../route.php';
 	}
 

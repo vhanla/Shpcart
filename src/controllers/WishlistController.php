@@ -17,7 +17,7 @@ use \Redirect;
 /**
  * The wishlist page.
  */
-class ShpcartWishlistController extends \Illuminate\Routing\Controllers\Controller
+class ShpcartWishlistController extends \Illuminate\Routing\Controller
 {
 	/**
 	 * Flag for whether the controller is RESTful.

@@ -15,7 +15,7 @@ use \Redirect;
 /**
  * The products page.
  */
-class ShpcartHomeController extends  \Illuminate\Routing\Controllers\Controller
+class ShpcartHomeController extends  \Illuminate\Routing\Controller
 {
 	/**
 	 * Flag for whether the controller is RESTful.

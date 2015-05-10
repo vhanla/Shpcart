@@ -15,7 +15,7 @@ use \Redirect;
 /**
  * The product information page.
  */
-class ShpcartViewController extends \Illuminate\Routing\Controllers\Controller
+class ShpcartViewController extends \Illuminate\Routing\Controller
 {
 	/**
 	 * Flag for whether the controller is RESTful.
