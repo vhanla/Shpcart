@@ -1,7 +1,7 @@
 #Shpcart
 **Version: Beta**
 
-    A Shopping Cart Package for Laravel, based on the Cartify Bundle.
+    A Shopping Cart Package for Laravel 5, based on the Cartify Bundle.
 
 ##Installation
 
@@ -15,7 +15,11 @@ Add ```'Madlymint\Shpcart\ShpcartServiceProvider'``` to the list of service prov
 **Step 3 (optional)**
 Add ```'Shpcart'  => 'Madlymint\Shpcart\Facades\Shpcart'``` to the list of class aliases in ```app/config/app.php```
 
-Now you can use it from anywhere ```\Shpcart::cart()``` as follows:
+**Step 4**
+Copy the package config to your local config with the publish command:
+```'php artisan vendor::publish'``` you can change the name of the cart as well as the storage_type method ```app/config/shpcart.php```
+
+Now you can use it from anywhere ```Shpcart::cart()``` as follows:
 
 
 
