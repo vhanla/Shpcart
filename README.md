@@ -6,7 +6,8 @@
 ##Installation
 
 **Step 1**
-Add ```"madlymint/shpcart": "1.1.*@dev"``` to the ```require``` attribute of your composer.json (requires you to run php composer.phar update from the command line)
+Add ```"repositories":[{"type":"vcs","url":"https://github.com/vhanla/Shpcart.git"}]``` to your compose.json file
+Add ```"madlymint/shpcart": "1.2.*@dev"``` to the ```require``` attribute of your composer.json (requires you to run php composer.phar update from the command line)
 
 **Step 2**
 Add ```'Madlymint\Shpcart\ShpcartServiceProvider'``` to the list of service providers in ```app/config/app.php```
@@ -14,11 +15,7 @@ Add ```'Madlymint\Shpcart\ShpcartServiceProvider'``` to the list of service prov
 **Step 3 (optional)**
 Add ```'Shpcart'  => 'Madlymint\Shpcart\Facades\Shpcart'``` to the list of class aliases in ```app/config/app.php```
 
-**Publish Assets**
-
-	php artisan asset:publish madlymint/shpcart
-
-Now visit http://yoursite.com/shpcart and you should see the example products page.
+Now you can use it from anywhere ```\Shpcart::cart()``` as follows:
 
 
 
